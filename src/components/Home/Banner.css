@@ -1,0 +1,36 @@
+.banner {
+  text-align: center;
+  height: 500px;
+  position: relative;
+  white-space: pre-line;
+}
+
+.banner-title {
+  color: #deccac;
+  font-family: "Encode Sans", sans-serif;
+  font-size: 40px;
+  height: 30%;
+  top: 10%;
+  mix-blend-mode: difference;
+  z-index: 10;
+}
+
+.banner-title-hidden {
+  color: #27272d;
+  font-family: "Encode Sans", sans-serif;
+  font-size: 50px;
+  height: 30%;
+  top: 70%;
+  z-index: 9;
+
+}
+
+.light {
+  position: absolute;
+  width: 80%;
+  height: 150%;
+  background: linear-gradient(#deccac, rgba(255, 0, 0, 0));
+  clip-path: polygon(20% 100%, 50% 0%, 80% 100%);
+  transform-origin: 50% 0%;
+  z-index: 8;
+}

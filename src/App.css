@@ -1,3 +1,29 @@
+.main {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background-color: #27272D;
+}
+
+.center-ver {
+  top: 50%;
+  transform: translate(0, -50%);
+  position: absolute;
+}
+
+.center-hor {
+  left: 50%;
+  transform: translate(-50%, 0%);
+  position: absolute;
+}
+
+.center-ver-hor {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  position: absolute;
+}
+
 .App {
   text-align: center;
 }
@@ -36,3 +62,5 @@
     transform: rotate(360deg);
   }
 }
+
+
