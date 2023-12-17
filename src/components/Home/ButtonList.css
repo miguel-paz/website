@@ -1,0 +1,17 @@
+.rest {
+  position: relative;
+  margin-top: 270px;
+}
+
+.buttons-grid {
+  margin: auto;
+  margin-bottom: 100px;
+  width: 60%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-auto-rows: 60px;
+  grid-column-gap: 0px;
+  grid-row-gap: 20px;
+  justify-items: center;
+  filter: url(#round);
+}

@@ -2,10 +2,11 @@ import { useEffect, useState } from "react";
 
 import "../../App.css";
 import "./Banner.css";
+import ButtonList from "./ButtonList";
 
 const Banner = () => {
-  const intro = "Hello, my name is Miguel Carvalho\nand I am a software developer."
-
+  const intro =
+    "Hello, my name is Miguel Carvalho\nand I am a software developer.";
 
   useEffect(() => {
     const handleWindowMouseMove = (event) => {
@@ -26,20 +27,20 @@ const Banner = () => {
   }, []);
 
   return (
-    <div className="main">
+    <div>
       <div className="banner">
-        <div className="banner-title center-hor">MOVE YOUR MOUSE!</div>
-        <div className="lamp">
-          <div id="light" className="light center-hor"></div>
+        <div className="banner-title center-hor"></div>
+        <div id="lamp">
+          <div className="lamp-cable center-hor"></div>
+          <div className="lamp-joint center-hor"></div>
+          <div id="light" className="lamp center-hor">
+            <div className="lamp-elipse center-hor"></div>
+            <div className="light center-hor"></div>
+          </div>
         </div>
-
-        <div className="banner-title-hidden center-ver-hor">
-            {intro}
-        </div>
+        <div className="banner-title-hidden center-ver-hor">{intro}</div>
       </div>
-      <div className="">
 
-      </div>
     </div>
   );
 };
