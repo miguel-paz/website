@@ -1,7 +1,7 @@
 .button {
+  width: auto;
+  position: relative;
   font-family: "Encode Sans", sans-serif;
-  border-top: 2px solid #27272d;
-  border-left: 2px solid #27272d;
   color: #27272d;
   padding: 10px 30px;
   text-align: center;
@@ -11,9 +11,38 @@
   z-index: 9;
   transition: border 650ms ease-in;
 }
+.button:hover + .bottom-light {
+  filter: blur(0px);
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+  display: inline-block;
+  position: relative;
+}
+
+/* Fade in */
+a:after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: 0px;
+  left: 0;
+  background-color: #27272d;
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+}
+a:hover:after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
 
 .bottom-light {
-  margin-top: -160px;
+  margin-top: -150px;
+  position: relative;
   height: 260px;
   width: 260px;
   background-image: radial-gradient(#deccac, transparent);
@@ -21,9 +50,6 @@
   border-radius: 50%;
   filter: blur(19px);
   transition: filter 250ms ease-out;
-}
-.bottom-light:hover {
-  filter: blur(0px);
 }
 
 .spotlight-right {

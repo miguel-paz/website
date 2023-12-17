@@ -5,10 +5,8 @@ const ButtonList = () => {
   return (
     <div className="rest">
       <div className="buttons-grid">
-        <Button text="Projects"></Button>
-        <Button text="About Me"></Button>
-        <div className="bottom-light spotlight-left"></div>
-        <div className="bottom-light spotlight-right"></div>
+        <Button text="Projects" href="#projects" spotlight="bottom-light spotlight-left"></Button>
+        <Button text="About Me" href="#about" spotlight="bottom-light spotlight-right"></Button>
       </div>
     </div>
   );

@@ -2,7 +2,6 @@ import { useEffect, useState } from "react";
 
 import "../../App.css";
 import "./Banner.css";
-import ButtonList from "./ButtonList";
 
 const Banner = () => {
   const intro =
