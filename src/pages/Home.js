@@ -7,7 +7,7 @@ const Home = () => {
       <div className="main">
         <div className="main-content">
           <Banner></Banner>
-          <ButtonList></ButtonList>
+          <ButtonList buttons={[{text: "Projects", href: "/projects", spotlight: "bottom-light spotlight-left"},{text: "About Me", href: "/about", spotlight: "bottom-light spotlight-right"}]}></ButtonList>
         </div>
       </div>
     </div>

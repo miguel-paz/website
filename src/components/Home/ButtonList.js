@@ -1,12 +1,13 @@
 import Button from "./Button";
 import "./ButtonList.css";
 
-const ButtonList = () => {
+const ButtonList = (props) => {
   return (
     <div className="rest">
       <div className="buttons-grid">
-        <Button text="Projects" href="#projects" spotlight="bottom-light spotlight-left"></Button>
-        <Button text="About Me" href="#about" spotlight="bottom-light spotlight-right"></Button>
+        {props.buttons.map( btn => (
+          <Button key={btn.text} text={btn.text} href={btn.href} spotlight={btn.spotlight}></Button>
+        ))}
       </div>
     </div>
   );

@@ -15,15 +15,15 @@
   filter: blur(0px);
 }
 
-a {
-  color: inherit;
+p {
+  color: #27272d;
   text-decoration: none;
   display: inline-block;
   position: relative;
 }
 
 /* Fade in */
-a:after {
+p:after {
   content: '';
   position: absolute;
   width: 100%;
@@ -35,13 +35,13 @@ a:after {
   transform-origin: bottom right;
   transition: transform 0.25s ease-out;
 }
-a:hover:after {
+p:hover:after {
   transform: scaleX(1);
   transform-origin: bottom left;
 }
 
 .bottom-light {
-  margin-top: -150px;
+  margin-top: -180px;
   position: relative;
   height: 260px;
   width: 260px;
@@ -50,18 +50,23 @@ a:hover:after {
   border-radius: 50%;
   filter: blur(19px);
   transition: filter 250ms ease-out;
+  opacity: 0;
+}
+
+.show {
+  opacity: 1;
 }
 
 .spotlight-right {
   animation: spotlightInRight 1 1600ms cubic-bezier(0, 0, 0, 1.13), spotlight infinite 12s linear;
   animation-direction: alternate;
-  animation-delay: 200ms, 1800ms;
+  animation-delay: 0ms, 1800ms;
 }
 
 .spotlight-left {
   animation: spotlightInLeft 1 1400ms cubic-bezier(0, 0, 0, 1.63), spotlight infinite 10s linear;
   animation-direction: alternate;
-  animation-delay: 200ms, 1800ms;
+  animation-delay: 0ms, 1800ms;
 }
 
 @keyframes spotlightInRight {
