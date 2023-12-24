@@ -1,4 +1,4 @@
-.main {
+.main, .main-noborder {
   box-sizing: border-box;
   border-top: 15px solid black;
   position: absolute;
@@ -7,12 +7,51 @@
   background-color: #27272D;
 }
 
+.main {
+  border: 0;
+}
+
 .main-content {
   box-sizing: border-box;
   position: absolute;
   height: auto;
   width: 100%;
   background-color: #27272D;
+}
+
+.main-light-container{
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  height: 100%;
+  width: 50%;
+  border: 3px solid white;
+  text-align: center;
+  margin-top: 50px;
+  color: #deccac;
+  font-family: "Encode Sans", sans-serif;
+  font-size: 40px;
+  mix-blend-mode: difference;
+}
+
+.main-light {
+  height: 100%;
+  width: 100%;
+  background-image: radial-gradient(#deccac, transparent);
+  border-radius: 25px;
+  filter: blur(10px);
+  z-index: 1;
+}
+
+.header {
+  color: #27272D;
+  z-index: 2;
+}
+
+.description {
+  color: #deccac;
+  z-index: 2;
+  font-size: 25px;
 }
 
 body {
