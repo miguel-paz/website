@@ -3,6 +3,12 @@
   margin-top: 350px;
 }
 
+@media (max-width: 1980px) {
+  .rest {
+      margin-top: 150px;
+  }
+}
+
 .buttons-grid {
   margin: auto;
   margin-bottom: 100px;

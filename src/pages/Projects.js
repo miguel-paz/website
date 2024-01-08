@@ -1,11 +1,14 @@
+import Banner from "../components/Home/Banner";
 import Button from "../components/Home/Button";
 import FilterList from "../components/Projects/FilterList";
+
 
 const Projects = (props) => {
   return (
     <div>
       <div className="main">
         <div className="main-content">
+        <Banner></Banner>
           <div style={{ float: "right", margin: "70px" }}>
             <Button
               key="Back"

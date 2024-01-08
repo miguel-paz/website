@@ -6,7 +6,7 @@ const Home = () => {
     <div className="App">
       <div className="main">
         <div className="main-content">
-          <Banner></Banner>
+          <Banner movableLight={true}></Banner>
           <ButtonList buttons={[{text: "Projects", href: "/projects", spotlight: "bottom-light spotlight-left"},{text: "About Me", href: "/about", spotlight: "bottom-light spotlight-right"}]}></ButtonList>
         </div>
       </div>

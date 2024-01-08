@@ -73,8 +73,11 @@
   z-index: 8;
 }
 
-
-
+@media (max-width: 1980px) {
+  .light {
+      height: 420px;
+  }
+}
 
 .flt_svg {
   visibility: hidden;
@@ -86,3 +89,4 @@
 .right {
   right: 0;
 }
+

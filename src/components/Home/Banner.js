@@ -3,7 +3,7 @@ import { useEffect, useState } from "react";
 import "../../App.css";
 import "./Banner.css";
 
-const Banner = () => {
+const Banner = (props) => {
   const intro =
     "Hello, my name is Miguel Carvalho\nand I am a software developer.";
 
@@ -14,8 +14,9 @@ const Banner = () => {
       var X = event.clientX - lightX;
       var Y = event.clientY;
       var angle = ((Math.atan2(Y, X) - Math.PI / 2) * 180) / Math.PI; //
-
-      light.style.transform = "translate(-50%, 0%) rotate(" + angle + "deg)";
+      if (props.movableLight) {
+        light.style.transform = "translate(-50%, 0%) rotate(" + angle + "deg)";
+      };
     };
 
     window.addEventListener("mousemove", handleWindowMouseMove);
