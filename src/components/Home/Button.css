@@ -24,7 +24,7 @@ p {
 
 /* Fade in */
 p:after {
-  content: '';
+  content: "";
   position: absolute;
   width: 100%;
   transform: scaleX(0);
@@ -54,13 +54,15 @@ p:hover:after {
 }
 
 .spotlight-right {
-  animation: spotlightInRight 1 1600ms cubic-bezier(0, 0, 0, 1.13), spotlight infinite 12s linear;
+  animation: spotlightInRight 1 1600ms cubic-bezier(0, 0, 0, 1.13),
+    spotlight infinite 12s linear;
   animation-direction: alternate;
   animation-delay: 0ms, 1800ms;
 }
 
 .spotlight-left {
-  animation: spotlightInLeft 1 1400ms cubic-bezier(0, 0, 0, 1.63), spotlight infinite 10s linear;
+  animation: spotlightInLeft 1 1400ms cubic-bezier(0, 0, 0, 1.63),
+    spotlight infinite 10s linear;
   animation-direction: alternate;
   animation-delay: 0ms, 1800ms;
 }
@@ -92,5 +94,17 @@ p:hover:after {
 
   to {
     transform: rotate(360deg) translate(20px, 0px);
+  }
+}
+
+@media (max-width: 1980px) {
+  .button {
+    font-size: 32px;
+  }
+
+  .bottom-light {
+    margin-top: -160px;
+    height: 220px;
+    width: 220px;
   }
 }

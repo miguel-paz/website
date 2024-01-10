@@ -10,13 +10,15 @@ const ProjectItem = (props) => {
     };
 
   return (
-    <div className="project-grid-item" style={{maxHeight: `${drop ? "600px" : "200px"}`}} onClick={onClickHandler}>
+    <div className="project-grid-item" style={{maxHeight: `${drop ? "600px" : "120px"}`}} onClick={onClickHandler}>
         <div className="project-grid-item__top">
             <div className="content">
                 <div className="title">{props.id}</div>
             </div>
             <img src={require(`../../images/${props.image}`)} alt="hivekind_cover"/>
         </div>
+        <div className="project-grid-item__body">Atum</div>
+
         <div className="project-grid-item__bot">
             <i className={`arrow ${drop ? "up" : "down"}`}></i>
         </div>
