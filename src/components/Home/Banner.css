@@ -73,9 +73,24 @@
   z-index: 8;
 }
 
+.major-light {
+  top: 20px;
+  position: relative;
+  width: 1300px;
+  height: 500px;
+  background: linear-gradient(#deccac, rgba(255, 0, 0, 0));
+  clip-path: polygon(0% 100%, 48.5% 0%, 51.5% 0%, 100% 100%);
+
+  z-index: 8;
+}
+
 @media (max-width: 1980px) {
   .light {
       height: 420px;
+  }
+
+  .major-light {
+    clip-path: polygon(0% 100%, 48% 0%, 52% 0%, 100% 100%);
   }
 }
 

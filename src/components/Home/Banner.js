@@ -16,7 +16,7 @@ const Banner = (props) => {
       var angle = ((Math.atan2(Y, X) - Math.PI / 2) * 180) / Math.PI; //
       if (props.movableLight) {
         light.style.transform = "translate(-50%, 0%) rotate(" + angle + "deg)";
-      };
+      }
     };
 
     window.addEventListener("mousemove", handleWindowMouseMove);
@@ -38,9 +38,12 @@ const Banner = (props) => {
             <div className="light center-hor"></div>
           </div>
         </div>
-        <div className="banner-title-hidden center-ver-hor">{intro}</div>
+        {props.movableLight ? (
+          <div className="banner-title-hidden center-ver-hor">{intro}</div>
+        ) : (
+          <div></div>
+        )}
       </div>
-
     </div>
   );
 };
