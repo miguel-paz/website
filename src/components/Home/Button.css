@@ -108,3 +108,39 @@ p:hover:after {
     width: 220px;
   }
 }
+
+@media (max-width: 412px) {
+  .button {
+    font-size: 18px;
+  }
+
+  .bottom-light {
+    margin-top: -85px;
+    height: 100px;
+    width: 100px;
+  }
+}
+
+@media (max-width: 360px) {
+  .button {
+    font-size: 18px;
+  }
+
+  .bottom-light {
+    margin-top: -85px;
+    height: 100px;
+    width: 100px;
+  }
+}
+
+@media (max-width: 320px) {
+  .button {
+    font-size: 18px;
+  }
+
+  .bottom-light {
+    margin-top: -85px;
+    height: 100px;
+    width: 100px;
+  }
+}

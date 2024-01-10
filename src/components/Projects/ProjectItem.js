@@ -17,7 +17,7 @@ const ProjectItem = (props) => {
             </div>
             <img src={require(`../../images/${props.image}`)} alt="hivekind_cover"/>
         </div>
-        <div className="project-grid-item__body">Atum</div>
+        <div className="project-grid-item__body"></div>
 
         <div className="project-grid-item__bot">
             <i className={`arrow ${drop ? "up" : "down"}`}></i>

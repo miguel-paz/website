@@ -60,6 +60,10 @@
     margin-bottom: 50px;
 }
 
+.label{
+
+}
+
 .project-grid-item__bot{
     position: absolute;
     left: 0;
@@ -85,3 +89,7 @@
     transform: rotate(45deg);
     -webkit-transform: rotate(45deg);
 }
+
+@media (max-width: 360px) {
+
+  }
