@@ -67,19 +67,37 @@ body {
   position: absolute;
 }
 
-@media (max-width: 412px) {
+@media only screen and (max-width: 412px) {
+  .header{
+    font-size: 18px;
+  }
   .description{
     font-size: 12px;
   }
 }
 
-@media (max-width: 360px) {
+@media only screen and (max-width: 360px) {
+  .header{
+    font-size: 18px;
+  }
   .description{
     font-size: 12px;
   }
 }
 
-@media (max-width: 320px) {
+@media only screen and (max-width: 320px) {
+  .header{
+    font-size: 18px;
+  }
+  .description{
+    font-size: 12px;
+  }
+}
+
+@media only screen and (-webkit-min-device-pixel-ratio: 2.625) {
+  .header{
+    font-size: 18px;
+  }
   .description{
     font-size: 12px;
   }

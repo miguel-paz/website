@@ -9,12 +9,16 @@ const Projects = (props) => {
   const projects = [
     {
       name: "HIVEKIND",
+      description: "System to monitor and defend bee colonies, collecting crucial metrics related to its internal temperature, humidity, weight, and location, as well as pictures of its surroundings which are later analysed by machine learning models in order to identify the presence of the Vespa Velutina.",
       image: "hivekind_apiary.jpg",
-      tags: ["Frontend", "Backend", "ReactJS", "Python", "SQL"],
+      techs: ["react_icon.png", "python_icon.png", "postgresql_icon.png", "arduino_icon.png"],
+      tags: ["Frontend", "Backend", "ReactJS", "Python", "SQL", "Arduino"],
     },
     {
       name: "AMICA",
-      image: "hivekind_apiary.jpg",
+      description: "Platform to motivate physical social interactions between multiple audiences for potential social skill development, aimed to neurodivergent and neurotypical children.​",
+      image: "amica_2.png",
+      techs: ["js_icon.png", "spring_icon.png", "postgresql_icon.png"],
       tags: ["Frontend", "Backend", "Java", "SQL"],
     },
   ];

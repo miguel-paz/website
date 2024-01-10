@@ -16,15 +16,21 @@
   filter: url(#round);
 }
 
-@media (max-width: 1980px) {
+@media only screen and (max-width: 1980px) {
   .rest {
-      margin-top: 150px;
+    margin-top: 100px;
   }
 }
 
-@media (max-width: 420px) {
+@media only screen and (max-width: 1440px) {
   .rest {
-      margin-top: -20px;
+    margin-top: 20px;
+  }
+}
+
+@media only screen and (max-width: 420px) {
+  .rest {
+    margin-top: -20px;
   }
 
   .buttons-grid {
@@ -33,9 +39,9 @@
   }
 }
 
-@media (max-width: 360px) {
+@media only screen and (max-width: 360px) {
   .rest {
-      margin-top: -20px;
+    margin-top: -20px;
   }
 
   .buttons-grid {
@@ -44,9 +50,9 @@
   }
 }
 
-@media (max-width: 320px) {
+@media only screen and (max-width: 320px) {
   .rest {
-      margin-top: -20px;
+    margin-top: -20px;
   }
 
   .buttons-grid {
@@ -55,3 +61,13 @@
   }
 }
 
+@media only screen and (-webkit-min-device-pixel-ratio: 2.625) {
+  .rest {
+    margin-top: -20px;
+  }
+
+  .buttons-grid {
+    grid-template-columns: 1fr;
+    grid-row-gap: 80px;
+  }
+}
