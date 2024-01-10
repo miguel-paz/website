@@ -249,6 +249,51 @@
   }
 }
 
+@media only screen and (-webkit-min-device-pixel-ratio: 2.625) {
+  .banner {
+    height: 400px;
+  }
+
+  .lamp-cable {
+    width: 5px;
+    height: 10px;
+  }
+
+  .lamp-joint {
+    width: 4px;
+    height: 4px;
+  }
+
+  .lamp {
+    width: 70px;
+    height: 20px;
+    border-radius: 150px 150px 0 0;
+    transform-origin: 50% 0%;
+  }
+
+  .lamp-elipse {
+    width: 170px;
+    height: 7px;
+    clip-path: ellipse(20% 50%);
+    transform: translate(-50%,200%);
+  }
+
+  .light {
+    top: 15px;
+    width: 800px;
+    height: 300px;
+  }
+
+  .banner-title-hidden{
+    font-size: 22px;
+    top: 50%;
+  }
+
+  .major-light {
+    clip-path: polygon(0% 100%, 48% 0%, 52% 0%, 100% 100%);
+  }
+}
+
 .flt_svg {
   visibility: hidden;
   position: absolute;
