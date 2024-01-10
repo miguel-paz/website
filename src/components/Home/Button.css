@@ -144,3 +144,15 @@ p:hover:after {
     width: 100px;
   }
 }
+
+@media only screen and (-webkit-min-device-pixel-ratio: 2.625) {
+  .button {
+    font-size: 18px;
+  }
+
+  .bottom-light {
+    margin-top: -85px;
+    height: 100px;
+    width: 100px;
+  }
+}
