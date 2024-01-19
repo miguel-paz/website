@@ -1,5 +1,4 @@
 import { useState } from "react";
-import hivekindApiary from "../../images/hivekind_apiary.jpg";
 
 const ProjectItem = (props) => {
   const [drop, setDrop] = useState(false);
@@ -21,7 +20,7 @@ const ProjectItem = (props) => {
         </div>
         <img
           src={require(`../../images/${props.image}`)}
-          alt="hivekind_cover"
+          alt="cover"
         />
       </div>
       <div className="project-grid-item__body">

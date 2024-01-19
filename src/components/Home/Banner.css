@@ -95,7 +95,7 @@
   font-size: 40px;
 }
 
-@media only screen and  (max-width: 1980px) {
+@media only screen and (max-width: 1980px) {
   .banner-title-hidden{
     font-size: 40px;
   }
@@ -109,7 +109,7 @@
   }
 }
 
-@media only screen and  (max-width: 1440px) {
+@media only screen and (max-width: 1440px) {
   .lamp-cable {
     width: 10px;
     height: 40px;
@@ -125,11 +125,12 @@
   }
 
   .major-light {
+    width: 140vw;
     clip-path: polygon(0% 100%, 48% 0%, 52% 0%, 100% 100%);
   }
 }
 
-@media only screen and  (max-width: 412px) {
+@media only screen and (max-width: 412px) {
   .banner {
     height: 400px;
   }
@@ -174,7 +175,7 @@
   }
 }
 
-@media only screen and  (max-width: 360px) {
+@media only screen and (max-width: 360px) {
   .banner {
     height: 400px;
   }
@@ -224,7 +225,7 @@
   }
 }
 
-@media only screen and  (max-width: 320px) {
+@media only screen and (max-width: 320px) {
   .banner {
     height: 400px;
   }
